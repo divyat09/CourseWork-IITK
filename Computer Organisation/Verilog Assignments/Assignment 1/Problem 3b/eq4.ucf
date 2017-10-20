@@ -1,0 +1,19 @@
+# Slide Switches
+
+NET "n0<0>" LOC= "L13" | IOSTANDARD = LVTTL | PULLUP ;    # Switch 0
+NET "n0<1>" LOC= "L14" | IOSTANDARD = LVTTL | PULLUP ;	  # Switch 1
+NET "n0<2>" LOC= "H18" | IOSTANDARD = LVTTL | PULLUP ;    # Switch 2
+NET "n0<3>" LOC= "N17" | IOSTANDARD = LVTTL | PULLUP ;    # Switch 3
+
+# Push Buttons
+
+NET "p1"  LOC= "V4" | IOSTANDARD = LVTTL | PULLDOWN ;    # Input for n1 
+NET "p2"  LOC= "K17" | IOSTANDARD = LVTTL | PULLDOWN ;	 # Input for n2
+
+#LED
+
+NET "res2" LOC= "F12" | IOSTANDARD = LVTTL | SLEW = SLOW | DRIVE = 8;  
+
+# Clock
+
+NET "clock" LOC ="C9" | IOSTANDARD = LVCMOS33;

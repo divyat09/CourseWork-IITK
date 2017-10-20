@@ -1,0 +1,22 @@
+# Slide Switches
+
+NET "init<0>" LOC= "L13" | IOSTANDARD = LVTTL | PULLUP ;    # Switch 0
+NET "init<1>" LOC= "L14" | IOSTANDARD = LVTTL | PULLUP ;	# Switch 1
+NET "init<2>" LOC= "H18" | IOSTANDARD = LVTTL | PULLUP ;    # Switch 2
+NET "init<3>" LOC= "N17" | IOSTANDARD = LVTTL | PULLUP ;    # Switch 3
+
+# Push Buttons
+
+NET "set"  LOC= "V4" | IOSTANDARD = LVTTL | PULLDOWN ;       # Set
+NET "reset"  LOC= "K17" | IOSTANDARD = LVTTL | PULLDOWN ;	 # Reset
+
+#LED
+
+NET "out<3>" LOC= "F11" | IOSTANDARD = LVTTL | SLEW = SLOW | DRIVE = 8;  # LED 1
+NET "out<2>" LOC= "E11" | IOSTANDARD = LVTTL | SLEW = SLOW | DRIVE = 8;  # LED 2 
+NET "out<1>" LOC= "E12" | IOSTANDARD = LVTTL | SLEW = SLOW | DRIVE = 8;  # LED 3 
+NET "out<0>" LOC= "F12" | IOSTANDARD = LVTTL | SLEW = SLOW | DRIVE = 8;  # LED 4
+
+# Clock
+
+NET "clock" LOC ="C9" | IOSTANDARD = LVCMOS33;

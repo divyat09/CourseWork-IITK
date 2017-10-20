@@ -1,0 +1,10 @@
+# Slide Switches
+
+NET "a<0>" LOC= "L13" | IOSTANDARD = LVTTL | PULLUP ;    # Switch 0
+NET "a<1>" LOC= "L14" | IOSTANDARD = LVTTL | PULLUP ;	 # Switch 1
+NET "b<0>" LOC= "H18" | IOSTANDARD = LVTTL | PULLUP ;    # Switch 2
+NET "b<1>" LOC= "N17" | IOSTANDARD = LVTTL | PULLUP ;    # Switch 3
+
+#LED
+
+NET "res1" LOC= "F12" | IOSTANDARD = LVTTL | SLEW = SLOW | DRIVE = 8;  

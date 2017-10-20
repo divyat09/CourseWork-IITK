@@ -1,0 +1,35 @@
+# Slide Switches
+
+NET "b<0>" LOC= "L13" | IOSTANDARD = LVTTL | PULLUP ;    # Switch 0
+NET "b<1>" LOC= "L14" | IOSTANDARD = LVTTL | PULLUP ;    # Switch 1
+NET "b<2>" LOC= "H18" | IOSTANDARD = LVTTL | PULLUP ;    # Switch 2
+NET "b<3>" LOC= "N17" | IOSTANDARD = LVTTL | PULLUP ;    # Switch 3
+
+# Push Buttons
+
+NET "p<0>"  LOC= "V4"  | IOSTANDARD = LVTTL | PULLDOWN ;    # RR1
+NET "p<1>"  LOC= "K17" | IOSTANDARD = LVTTL | PULLDOWN ;	# RR2
+NET "p<2>"  LOC= "D18" | IOSTANDARD = LVTTL | PULLDOWN ;    # WR
+NET "p<3>"  LOC= "H13" | IOSTANDARD = LVTTL | PULLDOWN ;    # WData 
+
+# Rotatory Switch
+
+NET "r<0>" LOC = "K18" | IOSTANDARD = LVTTL | PULLUP ;
+NET "r<1>" LOC = "G18" | IOSTANDARD = LVTTL | PULLUP ;
+NET "r<2>" LOC = "V16" | IOSTANDARD = LVTTL | PULLDOWN ;
+
+#LED
+
+NET "w1<0>"  LOC= "F12" | IOSTANDARD = LVTTL | SLEW = SLOW | DRIVE = 8;   # 1st Bit 
+NET "w1<1>"  LOC= "E12" | IOSTANDARD = LVTTL | SLEW = SLOW | DRIVE = 8;   # 2nd Bit
+NET "w1<2>"  LOC= "E11" | IOSTANDARD = LVTTL | SLEW = SLOW | DRIVE = 8;   # 3rd Bit
+NET "w1<3>"  LOC= "F11" | IOSTANDARD = LVTTL | SLEW = SLOW | DRIVE = 8;   # 4th Bit
+
+NET "w2<0>"  LOC= "C11" | IOSTANDARD = LVTTL | SLEW = SLOW | DRIVE = 8;   # 1st Bit 
+NET "w2<1>"  LOC= "D11" | IOSTANDARD = LVTTL | SLEW = SLOW | DRIVE = 8;   # 2nd Bit
+NET "w2<2>"  LOC= "E9" | IOSTANDARD = LVTTL | SLEW = SLOW | DRIVE = 8;    # 3rd Bit
+NET "w2<3>"  LOC= "F9" | IOSTANDARD = LVTTL | SLEW = SLOW | DRIVE = 8;    # 4th Bit
+
+# Clock
+
+NET "clk" LOC ="C9" | IOSTANDARD = LVCMOS33;
