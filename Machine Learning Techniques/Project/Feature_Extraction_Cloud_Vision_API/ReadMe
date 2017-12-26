@@ -1,0 +1,1 @@
+Run getallimages with proper address. Then relevant things will be stored in input.txt and run generatejson which will write things to output.json. Finally, run request.py that will put extracted features to features.json
